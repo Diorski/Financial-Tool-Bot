@@ -1,0 +1,16 @@
+why do we implement normalization?
+- its important if you want to compare multiple stocks on the same scale, especially if yure looking at price movements relative to each stocks value
+- Min-Max Normalization is a common technique which rescales the feature to a fixed range of [0, 1]. Here's how you might apply it to the closing price:
+-- # Min-Max normalization of the 'Close' column
+df['Normalized Close'] = (df['Close'] - df['Close'].min()) / (df['Close'].max() - df['Close'].min())
+
+1. Intraday Price Range:
+
+# Intraday range (High - Low)
+'df['Intraday Range'] = df['High'] - df['Low']'
+
+2. Percentage Change from Open to Close:
+'df['Change %'] = ((df['Close'] - df['Open']) / df['Open']) * 100'
+3. 
+
+// www.alphavantage.co/premium/api limit per minite is stopping me from going further 
