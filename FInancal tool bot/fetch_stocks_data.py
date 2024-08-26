@@ -1,7 +1,7 @@
 import requests
 
 # API Key (Replace 'YOUR_API_KEY' with your actual API key)
-api_key = "QNUSMINFA18DDJ0H"
+api_key = ""
 
 #preparing the API request, defining the base URL for the Alpha vantage API
 
